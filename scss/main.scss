@@ -1,0 +1,49 @@
+
+//bootstrap import
+@import '../bower_components/bootstrap-sass/assets/stylesheets/bootstrap';
+
+//variables import
+@import 'variables';
+
+
+.container {
+  width: 100vw;
+  background-color: $start;
+  background: radial-gradient(center, circle, $start, $start-outer);
+  background:-webkit-radial-gradient(center, circle, $start, $start-outer);
+  background:-moz-radial-gradient(center, circle, $start, $start-outer);
+}
+
+.wrapper {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+}
+
+.current-time {
+    color: $white;
+    font-size: 120px;
+    line-height: 100vh;
+}
+
+.hours {
+  position: relative;
+}
+
+.hours:after {
+  content: ":";
+  position: relative;
+  top: -12px;
+  left: 17px;
+}
+
+.minute {
+  position: relative;
+}
+
+.minutes:after {
+  content: ":";
+  position: relative;
+  top: -12px;
+  left: 17px;
+}
