@@ -1,5 +1,5 @@
-(function(){
-  'use strict';
+// (function(){
+//   'use strict';
 
   var currentTime;
   var hoursDisplay = document.querySelector('.hours');
@@ -92,4 +92,4 @@
 
 
 
-}());
+// }());
