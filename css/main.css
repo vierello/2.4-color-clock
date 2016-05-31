@@ -5811,37 +5811,35 @@ button.close {
     display: none !important; } }
 .container {
   width: 100vw;
+  height: 100vh;
   background-color: #6c006e;
-  background: radial-gradient(center, circle, #6c006e, rgba(33, 0, 34, 0.9));
-  background: -webkit-radial-gradient(center, circle, #6c006e, rgba(33, 0, 34, 0.9));
-  background: -moz-radial-gradient(center, circle, #6c006e, rgba(33, 0, 34, 0.9)); }
+  background: radial-gradient(center, circle, #6c006e, rgba(18, 0, 18, 0.9));
+  background: -webkit-radial-gradient(center, circle, #6c006e, rgba(18, 0, 18, 0.9));
+  background: -moz-radial-gradient(center, circle, #6c006e, rgba(18, 0, 18, 0.9)); }
 
 .wrapper {
-  height: 100vh;
-  width: 100vw;
-  text-align: center; }
-
-.current-time {
-  color: white;
-  font-size: 120px;
+  text-align: center;
   line-height: 100vh; }
 
-.hours {
-  position: relative; }
+.current-time {
+  display: inline-block; }
 
-.hours:after {
-  content: ":";
-  position: relative;
-  top: -12px;
-  left: 17px; }
+.line {
+  height: 3px;
+  width: 0%;
+  background-color: white;
+  margin: 0px auto; }
 
-.minute {
-  position: relative; }
+.hours,
+.minutes,
+.seconds {
+  color: white;
+  font-size: 120px; }
 
-.minutes:after {
-  content: ":";
-  position: relative;
-  top: -12px;
-  left: 17px; }
+.minutes:before {
+  content: ":"; }
+
+.seconds:before {
+  content: ":"; }
 
 /*# sourceMappingURL=main.css.map */
